@@ -3,6 +3,11 @@ public class Employee {
     private int baseSalary;
     private  int hourlyRate;
 
+    public Employee (int baseSalary, int hourlyRate) {
+        setBaseSalary(baseSalary);
+        setHourlyRate(hourlyRate);
+    }
+
     public int calculateWage(int extraHours){
         return baseSalary + (hourlyRate * extraHours);
     }
@@ -14,7 +19,7 @@ public class Employee {
         this.baseSalary = baseSalary;
     }
 
-    public int getBaseSalary() {
+    private int getBaseSalary() {
         return this.baseSalary;
     }
 
@@ -24,7 +29,7 @@ public class Employee {
         this.hourlyRate = hourlyRate;
     }
 
-    public int getHourlyRate() {
+    private int getHourlyRate() {
         return this.baseSalary;
     }
 }
